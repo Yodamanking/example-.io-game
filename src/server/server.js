@@ -9,6 +9,7 @@ const webpackConfig = require('../../webpack.dev.js');
 
 // Setup an Express server
 const app = express();
+app.get('/', function(req, res) {res.send("Hello there")})
 app.use(express.static('public'));
 
 if (process.env.NODE_ENV === 'development') {
