@@ -10,7 +10,7 @@ const webpackConfig = require('../../webpack.dev.js');
 var path = require(path);
 // Setup an Express server
 const app = express();
-app.get('/', function(req, res) {res.sendFile(path.join(_dirname, "../client/html/index.html")});
+app.get('/', function(req, res) {res.sendFile(path.join(_dirname, "../client/html/index.html"))});
 app.use(express.static('public'));
 
 if (process.env.NODE_ENV === 'development') {
